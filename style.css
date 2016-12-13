@@ -1,0 +1,49 @@
+body
+{
+    color: white !important;
+}
+
+.hub-view,
+.hub-content,
+.vsts-header .sub-menu
+{
+	background: rgb(24, 24, 24) !important;
+}
+
+#widgets-container .gs-w,
+.chart-container.chart-host.chartpin,
+.hub-pivot-content,
+.pull-request-widget,
+.tree-children
+{
+    background: rgb(56, 56, 56) !important;
+}
+
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-gutter-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-gutter-row-selected-blur,
+.grid-row-selected-blur
+{
+    background-color: inherit;
+}
+
+.grid:not(.grid-legacy) a:link,
+.grid-row,
+.hub-title,
+.markdown-widget .markdown-widget-container .rendered-markdown,
+.markdown-widget .markdown-widget-container .rendered-markdown *,
+.pull-request-widget .pull-request-widget-grid-data-cell-title a,
+.pull-request-widget .pull-request-widget-grid-data-cell-title a:link,
+.pull-request-widget .pull-request-widget-grid-data-cell-title a:visited,
+.pull-request-widget .pull-request-widget-title,
+.pivot-filter a,
+.rendered-markdown,
+.source-explorer-tree .folder .node-link .node-content,
+.tree-view > ul.tree-children li.folder > a,
+.vc-branches-container,
+.vsts-header .sub-menu .menu-item,
+.widget.clickable > a
+{
+    color: inherit;
+}
