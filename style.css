@@ -11,39 +11,106 @@ body
 }
 
 #widgets-container .gs-w,
+.bowtie-menus .menu.sub-menu > .menu-item.hover,
+.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
 .chart-container.chart-host.chartpin,
-.hub-pivot-content,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-hover,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-hover,
 .pull-request-widget,
-.tree-children
+.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content
 {
     background: rgb(56, 56, 56) !important;
 }
 
+.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
+.bowtie-menus .menu.sub-menu > .menu-item.hover,
+.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover {
+    border:1px solid transparent;
+}
+
+.buildvnext-build-details-header,
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-gutter-row-selected-blur,
 .grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-selected-blur,
 .grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-gutter-row-selected-blur,
-.grid-row-selected-blur
+.grid-row-selected-blur,
+.hub-pivot-content,
+.vc-change-summary,
+.vc-change-summary .changed-files-summary-header,
+.vc-change-summary > *,
+.vc-change-summary-files .file-container,
+.vc-change-summary-files .files-container,
+.vc-pullrequest-review-view .files-main-viewer-container,
+.vc-pullrequest-review-view .files-main-viewer-container > *,
+.vc-pullrequest-review-view .files-main-viewer-container .vc-change-summary,
+.vc-pullrequest-review-view .leftPane-no-full-page-scroll .vc-change-explorer .files-grid-container,
+.vc-pullrequest-review-view .leftPane-static .vc-change-explorer .files-grid-container,
+.vc-pullrequest-review-view .tabContent-two-pane > .centerPane-static,
+.vc-pullrequest-review-view .tabContent-two-pane > .with-background,
+.vc-pullrequest-review-view .tabContent-two-pane-no-full-page-scroll > .centerPane-static,
+.vc-pullrequest-review-view .tabContent-two-pane-no-full-page-scroll > .with-background,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box
 {
     background-color: inherit;
 }
 
+.assigned-to-me-title,
+.bowtie p,
+.chart-host > .chart-host-header > .chart-host-title,
 .grid:not(.grid-legacy) a:link,
 .grid-row,
 .hub-title,
+.item-list-control ul li a .item-number,
 .markdown-widget .markdown-widget-container .rendered-markdown,
 .markdown-widget .markdown-widget-container .rendered-markdown *,
+.overflow-flyout-content .folder,
+.path-explorer .folder,
+.path-explorer .last-part,
 .pull-request-widget .pull-request-widget-grid-data-cell-title a,
 .pull-request-widget .pull-request-widget-grid-data-cell-title a:link,
 .pull-request-widget .pull-request-widget-grid-data-cell-title a:visited,
 .pull-request-widget .pull-request-widget-title,
 .pivot-filter a,
+.pivot-view a,
 .rendered-markdown,
 .source-explorer-tree .folder .node-link .node-content,
+.toolbar,
 .tree-view > ul.tree-children li.folder > a,
 .vc-branches-container,
+.vc-change-summary-files .file-cell .file-name,
+.vc-change-summary-files .file-cell .file-name-link,
+.vc-history-detailsList .ms-DetailsRow-cell .text-dark,
+.vc-history-detailsList .ms-DetailsRow-cell.history-author .flyout.enabled,
+.vc-history-detailsList .ms-List-cell a,
+.vc-history-detailsList .ms-List-cell a:link,
+.vc-history-detailsList .ms-List-cell a:visited,
+.vc-history-tab-root,
+.vc-pullrequest-merge-policy-status-item a,
+.vc-pullrequest-merge-policy-status-item a:link,
+.vc-pullrequest-merge-policy-status-item a:visited,
+.vc-pullrequest-review-view .vc-inline-edit-markdown-preview,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box,
+.vc-pullrequest-review-view .vc-pullrequest-activity-header,
+.vc-preview-content-container .rendered-markdown,
+.vc-preview-content-container .rendered-markdown h1,
+.vc-preview-content-container .rendered-markdown h2,
+.vc-preview-content-container .rendered-markdown h3,
+.vc-preview-content-container .rendered-markdown h4,
+.vc-preview-content-container .rendered-markdown h5,
+.vc-preview-content-container .rendered-markdown h6,
+.vsts-header .sub-menu,
 .vsts-header .sub-menu .menu-item,
 .widget.clickable > a
 {
     color: inherit;
+}
+.vc-pullrequest-results-row a,
+.vc-pullrequest-results-row a:link,
+.vc-pullrequest-results-row a:visited
+{
+    color: inherit !important;
 }
