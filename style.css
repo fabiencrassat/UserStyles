@@ -1,49 +1,33 @@
-body
-{
-    color: white !important;
-}
-
-.hub-view,
-.hub-content,
-.vsts-header .sub-menu
-{
-	background: rgb(24, 24, 24) !important;
-}
-
-#widgets-container .gs-w,
-.bowtie-menus .menu.sub-menu > .menu-item.hover,
-.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
-.chart-container.chart-host.chartpin,
-.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-hover,
-.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-hover,
-.pull-request-widget,
-.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content
-{
-    background: rgb(56, 56, 56) !important;
-}
-
-.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
-.bowtie-menus .menu.sub-menu > .menu-item.hover,
-.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover {
-    border:1px solid transparent;
-}
 
 .buildvnext-build-details-header,
-.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
-.grid:not(.grid-legacy).grid-blurred .grid-row.grid-gutter-row-selected-blur,
-.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-selected-blur,
+.filtered-list-popup .filtered-list-control.vc-git-selector,
+.grid:not(.grid-legacy) .grid-gutter-row,
 .grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-gutter-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-gutter-row-selected-blur .grid-context-menu
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-selected-blur .grid-context-menu,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-selected-blur .grid-context-menu,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-gutter-row-selected-blur,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-gutter-row-selected-blur .grid-context-menu,
 .grid-row-selected-blur,
 .hub-pivot-content,
+.monaco-diff-editor .diffOverview,
+.monaco-editor,
+.monaco-editor .inputarea,
+.monaco-editor-background,
 .vc-change-summary,
 .vc-change-summary .changed-files-summary-header,
 .vc-change-summary > *,
 .vc-change-summary-files .file-container,
 .vc-change-summary-files .files-container,
+.vc-diff-viewer .diff-message,
+.vc-diff-viewer span.content-modified,
+.vc-discussion-thread-box,
+.vc-discussion-thread-comment,
+.vc-filter-button,
+.vc-filter-control .combo.input-text-box,
+.vc-pullrequest-review-view .centerPane-no-full-page-scroll .vc-pullrequest-details-compare .diff-viewer-container,
 .vc-pullrequest-review-view .files-main-viewer-container,
 .vc-pullrequest-review-view .files-main-viewer-container > *,
 .vc-pullrequest-review-view .files-main-viewer-container .vc-change-summary,
@@ -53,20 +37,36 @@ body
 .vc-pullrequest-review-view .tabContent-two-pane > .with-background,
 .vc-pullrequest-review-view .tabContent-two-pane-no-full-page-scroll > .centerPane-static,
 .vc-pullrequest-review-view .tabContent-two-pane-no-full-page-scroll > .with-background,
-.vc-pullrequest-review-view .vc-pullrequest-activity-box
+.vc-pullrequest-review-view .vc-pullrequest-activity-box,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box .vc-discussion-thread-comment,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.overview-iteration .vc-pullrequest-activity-body,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.overview-iteration .vc-pullrequest-activity-header,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued,
+.vc-pullrequest-review-view .vc-pullrequest-activity-feed,
+.versioncontrol-new-change-list-view .hub-content .hub-splitter .leftPane .left-hub-content .version-control-item-left-pane .vc-change-items-container .vc-change-explorer .files-grid-container
 {
     background-color: inherit;
 }
 
 .assigned-to-me-title,
 .bowtie p,
+.build-mine-result-set-table thead td,
 .chart-host > .chart-host-header > .chart-host-title,
+.filtered-list-popup .filtered-list-control.vc-git-selector,
+.filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list > li.new-selection,
+.filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list-tab-content .filtered-list > li.current-item,
 .grid:not(.grid-legacy) a:link,
 .grid-row,
 .hub-title,
 .item-list-control ul li a .item-number,
+.la-primary-data a,
+.la-primary-data a:visited,
 .markdown-widget .markdown-widget-container .rendered-markdown,
 .markdown-widget .markdown-widget-container .rendered-markdown *,
+.monaco-editor,
+.monaco-editor .inputarea,
+.monaco-editor.vs .token,
+.monaco-editor.vs .token.delimiter,
 .overflow-flyout-content .folder,
 .path-explorer .folder,
 .path-explorer .last-part,
@@ -78,23 +78,35 @@ body
 .pivot-view a,
 .rendered-markdown,
 .source-explorer-tree .folder .node-link .node-content,
+.tag-box,
+.title-button-container .title-button.button,
+.title-button-container .title-button.button a,
 .toolbar,
 .tree-view > ul.tree-children li.folder > a,
 .vc-branches-container,
+.vc-change-details-header-pane .vc-header-tool-bar .vc-actions-toolbar .vc-ellipsis-menu .menu-popup.bowtie-menus,
+.vc-change-details-link-bar .stakeholders-container .avatar-badge .author,
 .vc-change-summary-files .file-cell .file-name,
 .vc-change-summary-files .file-cell .file-name-link,
+.vc-discussion-thread-box,
+.vc-discussion-thread-comment .vc-discussion-comment-header .vc-discussion-comment-author,
+.vc-discussion-thread-comment .vc-discussion-thread-renderarea,
 .vc-history-detailsList .ms-DetailsRow-cell .text-dark,
 .vc-history-detailsList .ms-DetailsRow-cell.history-author .flyout.enabled,
 .vc-history-detailsList .ms-List-cell a,
 .vc-history-detailsList .ms-List-cell a:link,
 .vc-history-detailsList .ms-List-cell a:visited,
 .vc-history-tab-root,
+.vc-hub-repositories-selector .filtered-list, .vc-page-title-area .filtered-list,
 .vc-pullrequest-merge-policy-status-item a,
 .vc-pullrequest-merge-policy-status-item a:link,
 .vc-pullrequest-merge-policy-status-item a:visited,
+.vc-pullrequest-review-view button.iteration-selector-dropdownbutton,
 .vc-pullrequest-review-view .vc-inline-edit-markdown-preview,
 .vc-pullrequest-review-view .vc-pullrequest-activity-box,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-pullrequest-activity-header .file-link .file-name,
 .vc-pullrequest-review-view .vc-pullrequest-activity-header,
+.vc-pullrequest-review-view .vc-pullrequest-file-bar-toolbar.toolbar > .menu-bar,
 .vc-preview-content-container .rendered-markdown,
 .vc-preview-content-container .rendered-markdown h1,
 .vc-preview-content-container .rendered-markdown h2,
@@ -108,9 +120,75 @@ body
 {
     color: inherit;
 }
+
+.build-mine-result-row a,
+.build-mine-result-row a:link,
+.build-mine-result-row a:visited,
+.vc-pullrequest-merge-policy-status-item a,
+.vc-pullrequest-merge-policy-status-item a:link,
 .vc-pullrequest-results-row a,
 .vc-pullrequest-results-row a:link,
-.vc-pullrequest-results-row a:visited
+.vc-pullrequest-results-row a:visited,
+.vc-pullrequest-review-view .vc-pullrequest-reviewer-row.highlightable-row a
 {
     color: inherit !important;
+}
+
+body
+{
+    color: white !important;
+}
+
+.filtered-list-popup,
+.hub-view,
+.hub-content,
+.menu,
+.vsts-header .sub-menu
+{
+	background: rgb(24, 24, 24) !important;
+}
+
+#widgets-container .gs-w,
+.bowtie-menus .menu.sub-menu > .menu-item.hover,
+.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
+.chart-container.chart-host.chartpin,
+.diff-message.truncated,
+.diffOverview,
+.filtered-list-dropdown-menu:hover, .filtered-list-dropdown-menu.menu-opened,
+.filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list > li.new-selection,
+.filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list-tab-content .filtered-list > li.current-item,
+.grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-hover,
+.grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-hover,
+.grid-row .grid-row-normal .grid-row-current .grid-row-selected,
+.pull-request-widget,
+.subdued,
+.tag-box,
+.tag-delete,
+.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.selected > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.selected > div.node-context-menu-container,
+.tree-view.bowtie-tree.focus > ul.tree-children li.selected > a > div.node-content,
+li.tree-drag-tile.bowtie-tree > a > div.node-content,
+.vc-pullrequest-activity-header,
+.vc-discussion-comments,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box
+{
+    background: rgb(56, 56, 56) !important;
+}
+
+.vc-diff-viewer .code-line.added-content
+{
+    background-color: rgba(66, 165, 66, 0.5);
+}
+
+.bowtie-menus .menu.sub-menu > .menu-item.hover,
+.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
+.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued
+{
+    border:1px solid transparent;
 }
