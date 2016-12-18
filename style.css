@@ -1,5 +1,18 @@
+@-moz-document regexp("https:\\/\\/(?!code|manage|marketplace|my|www).*\\.visualstudio\\.com.*") {
+/**
+ * Created by Fabien Crassat
+ * Apply to URLs matching the following regex:
+ * https:\/\/(?!code|manage|marketplace|my|www).*\.visualstudio\.com.*
+ *
+ * Licence MIT
+ */
 
+.all-definitions-list .ms-List-cell .ms-DetailsRow.is-selected,
 .buildvnext-build-details-header,
+body,
+button,
+button.ui-state-default,
+button.ui-button,
 .filtered-list-popup .filtered-list-control.vc-git-selector,
 .grid:not(.grid-legacy) .grid-gutter-row,
 .grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-gutter-row-selected-blur,
@@ -16,6 +29,8 @@
 .monaco-editor,
 .monaco-editor .inputarea,
 .monaco-editor-background,
+.ms-ContextualMenu,
+.ms-Callout-main,
 .vc-change-summary,
 .vc-change-summary .changed-files-summary-header,
 .vc-change-summary > *,
@@ -43,7 +58,8 @@
 .vc-pullrequest-review-view .vc-pullrequest-activity-box.overview-iteration .vc-pullrequest-activity-header,
 .vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued,
 .vc-pullrequest-review-view .vc-pullrequest-activity-feed,
-.versioncontrol-new-change-list-view .hub-content .hub-splitter .leftPane .left-hub-content .version-control-item-left-pane .vc-change-items-container .vc-change-explorer .files-grid-container
+.versioncontrol-new-change-list-view .hub-content .hub-splitter .leftPane .left-hub-content .version-control-item-left-pane .vc-change-items-container .vc-change-explorer .files-grid-container,
+.vsts-header table.header-table.l2 .header-row
 {
     background-color: inherit;
 }
@@ -67,6 +83,8 @@
 .monaco-editor .inputarea,
 .monaco-editor.vs .token,
 .monaco-editor.vs .token.delimiter,
+.ms-ContextualMenu-item,
+.ms-Fabric,
 .overflow-flyout-content .folder,
 .path-explorer .folder,
 .path-explorer .last-part,
@@ -116,6 +134,8 @@
 .vc-preview-content-container .rendered-markdown h6,
 .vsts-header .sub-menu,
 .vsts-header .sub-menu .menu-item,
+.vsts-header .hub-list .l2-menubar > .menu-item-container > .menu-item,
+.build-status-text.inprogress,
 .widget.clickable > a
 {
     color: inherit;
@@ -145,12 +165,14 @@ body
 .menu,
 .vsts-header .sub-menu
 {
-	background: rgb(24, 24, 24) !important;
+    background: rgb(24, 24, 24) !important;
 }
 
 #widgets-container .gs-w,
 .bowtie-menus .menu.sub-menu > .menu-item.hover,
 .bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
+.build-mine-result-row:hover,
+.buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
 .chart-container.chart-host.chartpin,
 .diff-message.truncated,
 .diffOverview,
@@ -160,6 +182,8 @@ body
 .grid:not(.grid-legacy).grid-blurred .grid-gutter-row.grid-row-hover,
 .grid:not(.grid-legacy).grid-blurred .grid-row.grid-row-hover,
 .grid-row .grid-row-normal .grid-row-current .grid-row-selected,
+.is-selected,
+.ms-Callout-beakCurtain,
 .pull-request-widget,
 .subdued,
 .tag-box,
@@ -173,7 +197,8 @@ body
 li.tree-drag-tile.bowtie-tree > a > div.node-content,
 .vc-pullrequest-activity-header,
 .vc-discussion-comments,
-.vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box,
+.webplatform-header
 {
     background: rgb(56, 56, 56) !important;
 }
@@ -185,10 +210,16 @@ li.tree-drag-tile.bowtie-tree > a > div.node-content,
 
 .bowtie-menus .menu.sub-menu > .menu-item.hover,
 .bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
+.buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
 .tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
 .tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
 .tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
-.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued,
+.tree-view.bowtie-tree>ul.tree-children li.selected>a>div.node-content,
+.tree-view.bowtie-tree.focus>ul.tree-children li.selected>a>div.node-content,
+li.tree-drag-tile.bowtie-tree>a>div.node-content
 {
     border:1px solid transparent;
+}
+
 }
