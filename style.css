@@ -4,9 +4,17 @@
  * Apply to URLs matching the following regex:
  * https:\/\/(?!code|manage|marketplace|my|www).*\.visualstudio\.com.*
  *
+ * Tested only with Chome
+ *
  * Licence MIT
  */
 
+
+/**
+ * Reset CSS Rules 
+ */
+
+/* background-color */
 .all-definitions-list .ms-List-cell .ms-DetailsRow.is-selected,
 .buildvnext-build-details-header,
 body,
@@ -31,6 +39,8 @@ button.ui-button,
 .monaco-editor-background,
 .ms-ContextualMenu,
 .ms-Callout-main,
+.tree-view.bowtie-tree > ul.tree-children li.focus > div.node-context-menu-container,
+.tree-view.bowtie-tree > ul.tree-children li.hover > div.node-context-menu-container,
 .vc-change-summary,
 .vc-change-summary .changed-files-summary-header,
 .vc-change-summary > *,
@@ -64,6 +74,7 @@ button.ui-button,
     background-color: inherit;
 }
 
+/* color */
 .assigned-to-me-title,
 .bowtie p,
 .build-mine-result-set-table thead td,
@@ -141,6 +152,7 @@ button.ui-button,
     color: inherit;
 }
 
+/* color !important */
 .build-mine-result-row a,
 .build-mine-result-row a:link,
 .build-mine-result-row a:visited,
@@ -154,6 +166,31 @@ button.ui-button,
     color: inherit !important;
 }
 
+/* border */
+.bowtie-menus .menu.sub-menu > .menu-item.hover,
+.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
+.buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
+.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.focus > div.node-context-menu:hover,
+.tree-view.bowtie-tree > ul.tree-children li.focus > div.node-context-menu-container,
+.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.hover > div.node-context-menu-container,
+.tree-view.bowtie-tree > ul.tree-children li.selected > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.selected > div.node-context-menu:hover,
+.tree-view.bowtie-tree > ul.tree-children li.selected > div.node-context-menu-container,
+.tree-view.bowtie-tree.focus > ul.tree-children li.selected > a > div.node-content,
+li.tree-drag-tile.bowtie-tree > a > div.node-content,
+.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued
+{
+    border:1px solid transparent;
+}
+
+
+/**
+ * CSS Rules
+ */
+
 body
 {
     color: white !important;
@@ -165,7 +202,7 @@ body
 .menu,
 .vsts-header .sub-menu
 {
-    background: rgb(24, 24, 24) !important;
+    background: rgb(24, 24, 24) !important; /* Close to black color */
 }
 
 #widgets-container .gs-w,
@@ -188,7 +225,9 @@ body
 .subdued,
 .tag-box,
 .tag-delete,
+.toolbar .menu-bar .menu-item.hover,
 .tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
+.tree-view.bowtie-tree > ul.tree-children li.focus > div.node-context-menu-container,
 .tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
 .tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
 .tree-view.bowtie-tree > ul.tree-children li.selected > a > div.node-content,
@@ -200,26 +239,12 @@ li.tree-drag-tile.bowtie-tree > a > div.node-content,
 .vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box,
 .webplatform-header
 {
-    background: rgb(56, 56, 56) !important;
+    background: rgb(56, 56, 56) !important;  /* Close to grey color */
 }
 
 .vc-diff-viewer .code-line.added-content
 {
-    background-color: rgba(66, 165, 66, 0.5);
-}
-
-.bowtie-menus .menu.sub-menu > .menu-item.hover,
-.bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
-.buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
-.tree-view.bowtie-tree > ul.tree-children li.focus > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.hover > a > div.node-content,
-.tree-view.bowtie-tree > ul.tree-children li.context-menu-active > a > div.node-content,
-.vc-pullrequest-review-view .vc-pullrequest-activity-box.subdued,
-.tree-view.bowtie-tree>ul.tree-children li.selected>a>div.node-content,
-.tree-view.bowtie-tree.focus>ul.tree-children li.selected>a>div.node-content,
-li.tree-drag-tile.bowtie-tree>a>div.node-content
-{
-    border:1px solid transparent;
+    background-color: rgba(66, 165, 66, 0.5);  /* Close to green color */
 }
 
 }
