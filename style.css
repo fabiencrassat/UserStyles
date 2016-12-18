@@ -1,12 +1,17 @@
 @-moz-document regexp("https:\\/\\/(?!code|manage|marketplace|my|www).*\\.visualstudio\\.com.*") {
-/**
- * Created by Fabien Crassat
+/*
+ * Visual Studio Website Dark Theme
+ *
+ * (c) Fabien Crassat <fabien@crassat.com>
+ *
  * Apply to URLs matching the following regex:
- * https:\/\/(?!code|manage|marketplace|my|www).*\.visualstudio\.com.*
+ *  https:\/\/(?!code|manage|marketplace|my|www).*\.visualstudio\.com.*
  *
- * Tested only with Chome
+ * Tested only with Google Chrome
  *
- * Licence MIT
+ * Source code:  https://github.com/fabiencrassat/VisualStudio-Dark-Website/
+ * Distribution: https://userstyles.org/
+ * Licence:      https://creativecommons.org/publicdomain/zero/1.0/
  */
 
 
