@@ -1,4 +1,4 @@
-@-moz-document regexp("https:\\/\\/(?!code|manage|marketplace|my|www).*\\.visualstudio\\.com.*") {
+@-moz-document url-prefix("https://ms-devlabs.gallerycdn.vsassets.io/extensions/ms-devlabs/workitemvisualization/"), regexp("https:\\/\\/(?!code|manage|marketplace|my|www)(.[^\\/]*)\\.visualstudio\\.com.*") {
 /*
  * Visual Studio Website Dark Theme
  *
@@ -22,10 +22,14 @@
 /* background-color */
 body,
 button,
+button[disabled],
+button[disabled]:hover,
 button.ui-state-default,
 button.ui-button,
 input,
 #widgets-container .gs-w,
+#idcard-dialog.ui-dialog .ui-dialog-titlebar,
+.add-panel,
 .all-definitions-list .ms-List-cell .ms-DetailsRow.is-selected,
 .bowtie button,
 .bowtie input[type=text],
@@ -33,6 +37,9 @@ input,
 .bowtie textarea,
 .buildvnext-build-details-header,
 .buildvnext-jobs-console__item,
+.capacity-add-panel-identitypicker-container,
+.chart-template-list,
+.combo,
 .filtered-list-popup .filtered-list-control.vc-git-selector,
 .grid:not(.grid-legacy) .grid-gutter-row,
 .grid:not(.grid-legacy) .grid-gutter-row.grid-gutter-row-selected,
@@ -70,8 +77,14 @@ input,
 .recycle-bin,
 .rich-content-tooltip .popup-content-container,
 .state,
+.taskboard .taskboardTableBodyScrollContainer #taskboard-table-body,
+.taskboard-content-row .taskboard-expander,
+.taskboard-content-row .taskboard-parent,
+.tbTile .tbTileContent,
 .tree-view.bowtie-tree > ul.tree-children li.focus > div.node-context-menu-container,
 .tree-view.bowtie-tree > ul.tree-children li.hover > div.node-context-menu-container,
+.ui-dialog.ui-dialog-legacy .ui-dialog-titlebar,
+.ui-dialog.ui-dialog-legacy .ui-dialog-buttonpane,
 .vc-change-summary,
 .vc-change-summary .changed-files-summary-header,
 .vc-change-summary > *,
@@ -122,7 +135,11 @@ input,
 /* color */
 button,
 button:hover,
+th .witState,
+.add-panel-label,
+.add-panel-label label,
 .assigned-to-me-title,
+.backlogs-tool-panel-header .capacity-pane-title,
 .bowtie button,
 .bowtie input[type=text],
 .bowtie p,
@@ -168,6 +185,7 @@ button:hover,
 .tag-box,
 .tag-container:hover .tag-box-selectable,
 .tags-add-button .tag-box-selectable,
+.tbTile .title,
 .title-button-container .title-button.button,
 .title-button-container .title-button.button a,
 .toolbar,
@@ -175,6 +193,7 @@ button:hover,
 .tree-view .folder>.node-link>.node-content,
 .ui-widget-content,
 .ui-dialog:not(.ui-dialog-legacy) .ui-dialog-titlebar .ui-dialog-title,
+.ui-dialog.ui-dialog-legacy .ui-dialog-title,
 .vc-branches-container,
 .vc-change-details-header-pane .vc-header-tool-bar .vc-actions-toolbar .vc-ellipsis-menu .menu-popup.bowtie-menus,
 .vc-change-details-link-bar .stakeholders-container .avatar-badge .author,
@@ -246,6 +265,8 @@ button:hover,
 .bowtie-menus .menu.sub-menu > .menu-item.hover,
 .bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
 .buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
+.card-context-menu:hover,
+.chart-hosts-list > .message-block.invalid,
 .menu.sub-menu>.menu-item.hover,
 .tree-view > ul.tree-children li.context-menu-active > a > div.node-content,
 .tree-view > ul.tree-children li.focus > a > div.node-content,
@@ -303,6 +324,7 @@ input,
 
 /* background-color close to black color */
 input,
+.combo-drop-popup,
 .dropdown-colored-button .dropdown-content,
 .filtered-list-popup,
 .hub-view,
@@ -311,26 +333,32 @@ input,
 .menu,
 .popup-content-container,
 .ui-dialog:not(.ui-dialog-legacy),
+.ui-dialog.ui-dialog-legacy,
 .vsts-header .sub-menu,
-.webplatform-header
+.webplatform-header,
+.workitem-dialog.ui-dialog
 {
     background: rgb(24, 24, 24) !important; /* Close to black color */
 }
 
 /* background-color close to grey color */
+button:hover,
 .bowtie button:hover,
 .bowtie-menus .menu.sub-menu > .menu-item.hover,
 .bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
 .build-mine-result-row:hover,
 .buildvnext-plan-nodes-tree-node.selected > div.node-hover-container,
 button.add-new-item-component:hover,
+.card-context-menu:hover,
 .chart-container.chart-host.chartpin,
+.chart-hosts-list > .message-block.invalid,
 .diff-message.truncated,
 .diffOverview,
 .dropdown-colored-button .dropdown-content .dropdown-list .dropdown-row:hover,
 .filtered-list-dropdown-menu:hover, .filtered-list-dropdown-menu.menu-opened,
 .filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list > li.new-selection,
 .filtered-list-popup .filtered-list-control.vc-git-selector .filtered-list-tab-content .filtered-list > li.current-item,
+.form-grid .grid-group .workitem-group-maximize:hover,
 .grid:not(.grid-legacy) .grid-gutter-row.grid-gutter-row-selected,
 .grid:not(.grid-legacy) .grid-gutter-row.grid-row-hover,
 .grid:not(.grid-legacy) .grid-row.grid-row-hover,
@@ -343,8 +371,10 @@ button.add-new-item-component:hover,
 .la-item:hover,
 .menu.sub-menu>.menu-item.hover,
 .menu-bar > .menu-item.hover.icon-only,
+.menu-item.toggle-on,
 .ms-Callout-beakCurtain,
 .pivot-view li:hover,
+.query-type .pivot-filter.dropdown:hover,
 .recycle-bin:hover,
 .tag-box,
 .tag-delete,
@@ -364,6 +394,7 @@ li.tree-drag-tile.bowtie-tree > a > div.node-content,
 .vc-pullrequest-branches-container-target,
 .vc-pullrequest-results-row:hover,
 .vc-pullrequest-review-view .vc-pullrequest-activity-box.inline-comment .vc-discussion-thread-box,
+.visual-progress-total-unallocated,
 .vsts-header .hub-list .l2-menubar > .menu-item-container > .menu-item.focus,
 .vsts-header .hub-list .l2-menubar > .menu-item-container > .menu-item.hover,
 .witform-layout .work-item-form-tab:hover,
@@ -373,6 +404,23 @@ li.tree-drag-tile.bowtie-tree > a > div.node-content,
 .workitemcontrol .workitem-history-control .left-history-panel .history-item-list .history-item-summary:hover
 {
     background: rgb(56, 56, 56) !important;  /* Close to grey color */
+}
+
+button[disabled],
+button[disabled]:hover,
+button[disabled]:focus,
+.combo
+{
+    border: 1px solid rgb(56, 56, 56);
+}
+
+.taskboard-cell, .taskboard-expander
+{
+    border-bottom: 2px solid rgb(56, 56, 56);
+}
+.taskboard-cell
+{
+    border-left: 2px solid rgb(56, 56, 56);
 }
 
 .vc-diff-viewer .code-line.added-content
