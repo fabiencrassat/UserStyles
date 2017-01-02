@@ -474,10 +474,10 @@ button[disabled]:focus,
 }
 
 .monaco-editor.vs .token.attribute.value,
-.monaco-editor.vs .token.delimiter,
 .monaco-editor.vs .token.keyword,
 .monaco-editor.vs .token.tag
 {
     filter: invert(100%);
 }
+
 }
