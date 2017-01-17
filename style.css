@@ -1,4 +1,19 @@
 @-moz-document domain("wikipedia.org") {
+/*
+ * Wikipedia Website Dark Theme
+ *
+ * (c) Fabien Crassat <fabien@crassat.com>
+ *
+ * Apply to URLs matching the following domain:
+ *  wikipedia.org
+ *
+ * Tested only with Google Chrome
+ *
+ * Source code:  https://github.com/fabiencrassat/Wikipedia-Dark-Website
+ * Distribution: https://userstyles.org/styles/137798/wikipedia-dark-website
+ * Licence:      https://creativecommons.org/publicdomain/zero/1.0/
+ */
+
 /**************/
 /* HTML Style */
 /**************/
