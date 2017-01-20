@@ -1,3 +1,4 @@
+@-moz-document domain("wikipedia.org") {
 /*
  * Wikipedia Website Dark Theme
  *
@@ -262,4 +263,5 @@ th.navbox-title
 }
 .degrade {
     background-color:inherit !important;
+}
 }
