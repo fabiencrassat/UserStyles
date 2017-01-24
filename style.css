@@ -1,3 +1,4 @@
+@-moz-document url-prefix("https://ms-devlabs.gallerycdn.vsassets.io/extensions/ms-devlabs/workitemvisualization/"), regexp("https:\\/\\/(?!code|manage|marketplace|my|www)(.[^\\/]*)\\.visualstudio\\.com.*") {
 /*
  * Visual Studio Website Dark Theme
  *
@@ -33,7 +34,6 @@ input,
 .all-definitions-list .ms-List-cell .ms-DetailsRow .ms-DetailsRow-cell .popup-menu-trigger:hover,
 .all-definitions-list .ms-List-cell .ms-DetailsRow.is-selected,
 .bowtie button,
-.bowtie button:disabled,
 .bowtie input[type=text],
 .bowtie input:not([type]),
 .bowtie textarea,
@@ -174,8 +174,7 @@ th .witState,
 .bowtie input[type=text],
 .bowtie p,
 .bowtie-style textarea,
-.build-details .summary-section-header,
-.build-details .summary-item-header,
+.build-definition-view-content .summary-section .header,
 .build-mine-result-set-table thead td,
 .build-view .pivot-view a,
 .buildvnext-jobs-console__item__name,
@@ -257,7 +256,6 @@ th .witState,
 .vc-ellipsis-menu,
 .vc-git-repositories-tree .branch-node > .node-link > .node-content,
 .vc-git-repositories-tree .branch-node.default-branch > .node-link > .node-content,
-.vc-history-detailsList,
 .vc-history-detailsList .ms-DetailsRow-cell .text-dark,
 .vc-history-detailsList .ms-DetailsRow-cell.history-author .flyout.enabled,
 .vc-history-detailsList .ms-List-cell a,
@@ -323,7 +321,6 @@ th .witState,
 }
 
 /* border */
-button,
 .bowtie-menus .menu.sub-menu > .menu-item.hover,
 .bowtie-menus .menu.sub-menu > .menu-item-container > .menu-item.hover,
 .buildvnext-plan-nodes-tree-node.hover:not(.task-abandoned) > div.node-hover-container,
@@ -450,8 +447,6 @@ button.add-new-item-component:hover,
 .menu-item.toggle-on,
 .monaco-menu .monaco-action-bar.vertical .action-item:hover:not(.disabled),
 .ms-Callout-beakCurtain,
-.path-explorer .folder:hover,
-.path-explorer-container .repo-name:hover,
 .pivot-view li:hover,
 .query-type .pivot-filter.dropdown:hover,
 .recycle-bin:hover,
@@ -497,7 +492,6 @@ li.tree-drag-tile.bowtie-tree > a > div.node-content,
 button[disabled],
 button[disabled]:hover,
 button[disabled]:focus,
-.bowtie button:disabled,
 .combo
 {
     border: 1px solid rgb(56, 56, 56);
@@ -528,4 +522,5 @@ button[disabled]:focus,
 .cumulative-flow-chart.small-chart-container > img
 {
     filter: invert(50%);
+}
 }
