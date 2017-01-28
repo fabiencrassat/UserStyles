@@ -16,7 +16,7 @@
 
 
 /**
- * Reset CSS Rules 
+ * Reset CSS Rules
  */
 
 /* background-color */
@@ -134,7 +134,7 @@ input,
 .vc-pullrequest-review-view .files-main-viewer-container .vc-change-summary,
 .vc-pullrequest-review-view .leftPane-no-full-page-scroll .vc-change-explorer .files-grid-container,
 .vc-pullrequest-review-view .leftPane-static .vc-change-explorer .files-grid-container,
-.vc-pullrequest-review-view .pullrequest-commits-content .group-results, 
+.vc-pullrequest-review-view .pullrequest-commits-content .group-results,
 .vc-pullrequest-review-view .pullrequest-updates-content,
 .vc-pullrequest-review-view .tabContent-two-pane > .centerPane-static,
 .vc-pullrequest-review-view .tabContent-two-pane > .with-background,
