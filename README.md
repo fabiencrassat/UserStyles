@@ -1,4 +1,6 @@
 # My User Styles
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a42b20ed6514e6a9ba0a325928be033)](https://www.codacy.com/app/fabien/UserStyles?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=fabiencrassat/UserStyles&amp;utm_campaign=Badge_Grade)
+
 * [Dark Visual Studio Website (VSTS) style](#VisualStudio-Dark-Website)
 * [Dark Wikipedia Website style](#Wikipedia-Dark-Website)
 
